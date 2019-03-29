@@ -141,6 +141,10 @@ html {
 .footer-nav a {
   color: blue;
 }
+.footer-social-links > li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
 
 /* HERO STYLES */
 .full-hero {
