@@ -1,9 +1,14 @@
 <head>
   {% if page.title %}
-  <title>{{ page.title }} | Test Page</title>
-{% else %}
-  <title>Test Page: Don't Panic</title>
-{% endif %} <!-- Add a page title condition -->
+    <title>{{ page.title }} | Test Page</title>
+  {% else %}
+    <title>Test Page: Don't Panic</title>
+  {% endif %} <!-- Add a page title condition -->
+  {% if page.escription %}
+    <meta name="description" content="{{ page.description }}">
+  {% else %}<!-- Add a page description meta condition -->
+    <meta name="description" content="This is a dangerous site.">
+  {% endif %}
   <link rel="shortcut icon" href="/favicon32.png"><!-- Add a favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"><!-- Add a apple-icon -->
   <meta charset="utf-8">
