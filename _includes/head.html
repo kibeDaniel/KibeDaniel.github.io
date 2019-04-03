@@ -1,7 +1,17 @@
 <head>
+  {% if page.title %}
+  <title>{{ page.title }} | Test Page</title>
+{% else %}
   <title>Test Page: Don't Panic</title>
+{% endif %} <!-- Add a page title condition -->
+  <link rel="shortcut icon" href="/favicon32.png"><!-- Add a favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"><!-- Add a apple-icon -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- tells the browser that the page should be drawn at the size of the device screen instead of the virtual screen size, while setting the zoom scaling to 1 (which means no scaling) -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
+  <link rel="stylesheet"
+        href="/fonts/fontawesome/css/all.css"><!-- load all styles -->
   <link rel="stylesheet" href="/css/test.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
